@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <label for="h5">With Pipe </label>
+          <h5>{{ title | uppercase }}</h5>
+          <label for="">Without Pipe</label>
+          <h5>{{ title }}</h5>
+        </div>
+        <div class="col-4">
+          <label for=""
+            >Without Pipe
+            <h5>{{ date }}</h5></label
+          >
+          <label for=""
+            >With Pipe
+            <h5>{{ date | date }}</h5></label
+          >
+        </div>
+        <div class="col-4">
+          <label for=""
+            >With Pipe
+            <h5>{{ date | date: "shortDate" }}</h5></label
+          >
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-3">
+          <label for=""
+            >Without Pipe
+            <h5>{{ price }} Dollar</h5></label
+          >
+          <br />
+          <label for=""
+            >With Pipe
+            <h5>{{ price | currency: "USD" }}</h5></label
+          >
+        </div>
+        <br />
+        <div class="col-3">
+          <label for=""
+            >Without Custom Pipe
+            <h5>{{ name }}</h5></label
+          >
+          <label for=""
+            >With Custom Pipe
+            <h5>{{ name | turn }}</h5></label
+          >
+        </div>
+        <div class="col-4">
+          <label for=""
+            >Without Custom Pipe
+            <h5>{{ name2 }}</h5></label
+          >
+          <label for=""
+            >With Custom Pipe
+            <h5>{{ name2 | turn }}</h5></label
+          >
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-4">
+          <label for=""
+            >Without Custom Pipe
+            <h5>{{ name3 }}</h5></label
+          >
+          <label for=""
+            >With Custom Pipe
+            <h5>{{ name3 | turn }}</h5></label
+          >
+        </div>
+        <div class="col-4">
+          <label for=""
+            >Without Custom Pipe
+            <h5>{{ name4 }}</h5></label
+          >
+          <label for=""
+            >With Custom Pipe
+            <h5>{{ name4 | turn }}</h5></label
+          >
+        </div>
+        <div class="col-4">
+          <label for=""
+            >Without Custom Pipe
+            <h5>{{ name5 }}</h5></label
+          >
+          <label for=""
+            >With Custom Pipe
+            <h5>{{ name5 | turn }}</h5></label
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
